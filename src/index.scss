@@ -1,0 +1,89 @@
+.App {
+    display: flex;
+    height: 100vh;
+    .left_sideBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        height: 100%;
+
+        .header_container {
+            display: flex;
+            gap: 50px;
+            padding: 20px;
+            .submit_card {
+                width: 100px;
+                height: 40px;
+                border: 1px solid rgb(0, 13, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+    
+        .main_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 2px solid rgb(122, 122, 122);
+            border-bottom: 2px solid rgb(122, 122, 122);
+            height: 90%;
+            overflow-y: auto;
+            .center_mode {
+                display: flex;
+                // justify-content: center;
+                // align-items: center;
+                width: 500px;
+                flex-wrap: wrap;
+                gap: 50px;
+                height: 80%;
+                padding-bottom: 50px;
+
+                .item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40%;
+                    height: 150px;
+                    position: relative;
+                    border: 2px solid rgb(122, 122, 122);
+                    .delete {
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        &:hover { color: red; }
+                        cursor: pointer;
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        .item_content {
+                            font-weight: bolder;
+                            font-size: 20px;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    
+        .footer_container {
+            padding: 20px;
+        }
+    }
+
+
+    .right_sideBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        border-left: 2px solid rgb(122, 122, 122);
+        padding: 10px;
+        font-weight: bolder;
+    }
+}
